@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/titlebar">
+
+        <TextView
+            android:id="@+id/cancel_click"
+            style="@style/rightbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/backimg_margin"
+            android:text="取消" />
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/basetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/finish_click"
+            style="@style/rightbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/backimg_margin"
+            android:text="确定" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/firstitem_margintop"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="20dp"
+
+                    android:paddingTop="15dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:id="@+id/zongjie2_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:gravity="start"
+                            android:lineSpacingExtra="10dp"
+                            android:minHeight="75dp"
+                            android:paddingRight="20dp"
+                            android:hint="输入总结内容"
+                            android:textColor="@color/disable"
+                            android:textColorHint="@color/sign_tag"
+                            android:textSize="@dimen/comm"
+                            android:visibility="gone" />
+
+                        <LinearLayout
+                            android:id="@+id/inputdatalayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/zongjie_data"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:gravity="start"
+                                android:hint="请输入今日总结"
+                                android:lineSpacingExtra="10dp"
+                                android:minLines="1"
+                                android:paddingRight="20dp"
+                                android:textColor="@color/disable"
+                                android:textColorHint="@color/sign_tag"
+                                android:textSize="@dimen/comm" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="1px"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginTop="15dp"
+                                android:background="@color/line" />
+
+                            <EditText
+                                android:id="@+id/huibao_data"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:gravity="start"
+                                android:hint="请输入明日计划"
+                                android:lineSpacingExtra="10dp"
+                                android:minHeight="75dp"
+                                android:paddingRight="20dp"
+                                android:textColor="@color/disable"
+                                android:textColorHint="@color/sign_tag"
+                                android:textSize="@dimen/comm" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:paddingTop="20dp" android:paddingBottom="20dp" android:paddingRight="20dp" android:paddingLeft="10dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/imglist"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/startlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/firstitem_margintop"
+                    android:background="@drawable/dep_emp_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/stimetip"
+                        android:text="开始日期"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/basetitle"
+                        android:textSize="@dimen/comm" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/stime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="输入日期"
+                            android:textColor="@color/disable"
+                            android:textColorHint="@color/sign_tag"
+                            android:textSize="@dimen/comm" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/showchid" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/endlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="@dimen/firstitem_margintop"
+                    android:background="@drawable/dep_emp_selector"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/etimetip"
+                        android:text="结束日期"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/basetitle"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/comm" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/etime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="输入日期"
+                            android:textColor="@color/disable"
+                            android:textColorHint="@color/sign_tag"
+                            android:textSize="@dimen/comm" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/showchid" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/yejielayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/firstitem_margintop"
+                        android:background="@drawable/dep_emp_selector"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="当日营业额"
+                            android:textColor="@color/basetitle"
+                            android:textSize="@dimen/comm" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:gravity="center_vertical|right"
+                                android:id="@+id/money"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:inputType="number"
+                                android:textColor="@color/disable"
+                                android:textColorHint="@color/sign_tag"
+                                android:textSize="@dimen/comm" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="元"
+                                android:layout_marginRight="12dp"
+                                android:textColor="@color/disable"
+                                android:textSize="@dimen/comm" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="@dimen/firstitem_margintop"
+                        android:background="@drawable/dep_emp_selector"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="当日客户数"
+                            android:textColor="@color/basetitle"
+                            android:textSize="@dimen/comm" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:gravity="center_vertical|right"
+                                android:id="@+id/custmernum"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/transparent"
+                                android:inputType="number"
+                                android:textColor="@color/disable"
+                                android:textColorHint="@color/sign_tag"
+                                android:textSize="@dimen/comm" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:padding="20dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/repoartTolist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:padding="20dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/copytolist"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+        <include layout="@layout/commloadinglayout"></include>
+    </RelativeLayout>
+</LinearLayout>

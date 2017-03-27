@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/titlebar">
+
+        <TextView
+            android:id="@+id/leftimg"
+            style="@style/rightbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/backimg_margin"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/basetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="合同内容详情" />
+
+        <TextView
+            android:id="@+id/finish"
+            style="@style/rightbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/backimg_margin"
+            android:text="完成" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/content_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="输入合同内容"
+        android:textColor="@color/basetitle"
+        android:textSize="@dimen/comm" />
+
+</LinearLayout>

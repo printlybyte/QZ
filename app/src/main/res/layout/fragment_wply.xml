@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/titlebar">
+
+        <TextView
+            android:id="@+id/leftimg"
+            style="@style/rightbutton"
+            android:layout_marginLeft="@dimen/backimg_margin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/basetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+
+        <TextView
+            android:id="@+id/finish"
+            android:text="完成"
+            style="@style/rightbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/backimg_margin" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@color/comm_bg"
+            android:dividerHeight="@dimen/firstitem_margintop"
+            android:headerDividersEnabled="false"
+            android:listSelector="@color/transparent" />
+
+        <include layout="@layout/commloadinglayout"></include>
+    </FrameLayout>
+</LinearLayout>

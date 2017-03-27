@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/titlebar">
+
+        <ImageView
+            android:id="@+id/leftimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/close_icon"></ImageView>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/basetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="筛选" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="排序"
+            android:textColor="@color/basetitle"
+            android:textSize="@dimen/secondtitle" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/choicetag_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="最新发布"
+                android:textColor="@color/selection_color"
+                android:textSize="@dimen/comm" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/choicetag_selector"
+                android:button="@color/transparent"
+                android:gravity="center"
+                android:text="最新更新"
+                android:textColor="@color/selection_color"
+                android:textSize="@dimen/comm" />
+
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/choicetag_selector"
+                android:button="@color/transparent"
+                android:gravity="center"
+                android:text="截止日期"
+                android:textColor="@color/selection_color"
+                android:textSize="@dimen/comm" />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="任务状态"
+            android:textColor="@color/basetitle"
+            android:textSize="@dimen/secondtitle" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio4"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/choicetag_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="@color/selection_color"
+                android:textSize="@dimen/comm" />
+
+            <RadioButton
+                android:id="@+id/radio5"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/choicetag_selector"
+                android:button="@color/transparent"
+                android:gravity="center"
+                android:text="未完成"
+                android:textColor="@color/selection_color"
+                android:textSize="@dimen/comm" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="发起人"
+            android:textColor="@color/basetitle"
+            android:textSize="@dimen/secondtitle" />
+
+        <TextView
+            android:id="@+id/create_person_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/choice_normal"
+            android:drawableRight="@drawable/showchid"
+
+            android:hint="选择发起人"
+            android:padding="10dp"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/disable" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="负责人"
+            android:textColor="@color/basetitle"
+            android:textSize="@dimen/secondtitle" />
+
+        <TextView
+            android:id="@+id/chargmen_data"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/choice_normal"
+            android:drawableRight="@drawable/showchid"
+            android:hint="选择负责人"
+            android:padding="10dp"
+            android:textColor="@color/blue"
+            android:textColorHint="@color/disable" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:gravity="center"
+        android:paddingTop="15dp">
+         <TextView
+             android:id="@+id/reset_click"
+             android:textColor="@color/disable"
+             android:background="@drawable/choice_normal"
+             android:layout_width="120dp"
+             android:paddingTop="8dp"
+             android:paddingBottom="8dp"
+             android:gravity="center"
+             android:text="重置"
+             android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/ok_click"
+            android:textColor="@color/white"
+            android:background="@drawable/choice_selected_fill"
+            android:layout_width="120dp"
+            android:paddingTop="8dp"
+            android:layout_marginLeft="15dp"
+            android:paddingBottom="8dp"
+            android:gravity="center"
+            android:text="确定"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+</LinearLayout>

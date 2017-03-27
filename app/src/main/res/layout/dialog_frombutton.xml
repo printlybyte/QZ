@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootlayout"
+    android:background="@color/translucent"
+    android:orientation="vertical">
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_alignParentBottom="true"
+      android:layout_height="wrap_content" android:background="@color/comm_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editbut"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/dep_emp_selector"
+            android:gravity="center"
+            android:text="编辑"
+            android:textColor="@color/basetitle"
+            android:textSize="@dimen/secondtitle" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/delbut"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/dep_emp_selector"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="@color/basetitle"
+            android:textSize="@dimen/secondtitle" />
+
+        <TextView
+            android:layout_marginTop="@dimen/firstitem_margintop"
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/dep_emp_selector"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="@color/basetitle"
+            android:textSize="@dimen/secondtitle" />
+
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

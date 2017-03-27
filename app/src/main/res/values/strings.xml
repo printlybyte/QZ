@@ -1,0 +1,234 @@
+<resources>
+    <string name="app_name">QZ</string>
+    <string name="get_store_phonestate">获取存储和打电话权限</string>
+
+    <!-- 更新文件保存路径 -->
+    <string name="saveDataPathRoot">/lianwo/</string>
+    <string name="saveDataPathAPK">apk/</string>
+
+    <!--dialog-->
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- commxlistView -->
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal"> 查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <!-- comm -->
+    <string name="network_error">当前无网络，请检查网络连接</string>
+    <string name="isloading">正在加载...</string>
+
+    <!-- 版本检测 -->
+    <string name="download">下载</string>
+    <string name="isNewVersion">当前已是最新版本</string>
+    <string name="newversion_find_info">发现最新版本，是否更新？</string>
+    <string name="nofreespace">sd卡空间不足</string>
+    <string name="sdcard_nouse">sd不可用</string>
+    <string name="downloadfail">下载失败</string>
+    <string name="fail_getdata">获取数据失败，请重试</string>
+
+
+    <array name="workitems">
+
+        <item>HR</item>
+        <item>工作</item>
+        <item>销售</item>
+        <item>合同管理</item>
+        <item>商品</item>
+        <item>采购</item>
+        <item>出入库</item>
+        <item>借入借出</item>
+        <item>财务</item>
+        <item>物流</item>
+        <item>" "</item>
+        <item>" "</item>
+    </array>
+
+
+    <array name="shenpitypes">
+
+        <item>全部</item>
+        <item>请假</item>
+        <item>报销</item>
+        <item>出差</item>
+        <item>外出</item>
+        <item>付款</item>
+        <item>公章</item>
+        <item>合同</item>
+        <item>借款</item>
+        <item>采购</item>
+        <item>转正</item>
+        <item>离职</item>
+        <item>调薪</item>
+        <item>普通</item>
+    </array>
+    <integer-array name="shenpitypenums">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>9</item>
+        <item>12</item>
+        <item>8</item>
+        <item>14</item>
+        <item>4</item>
+        <item>11</item>
+        <item>7</item>
+        <item>6</item>
+        <item>10</item>
+        <item>15</item>>
+    </integer-array>
+
+
+    <array name="shenpitypes2">
+        <item>请假</item>
+        <item>报销</item>
+        <item>出差</item>
+        <item>借款</item>
+        <item>招聘</item>
+        <item>离职</item>
+        <item>转正</item>
+        <item>公章</item>
+        <item>合同</item>
+        <item>外出</item>
+        <item>调薪</item>
+        <item>用品采购</item>
+        <item>付款</item>
+        <item>物品领用</item>
+        <item>普通审核</item>
+    </array>
+
+    <array name="shenpitypes2Num">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>14</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>15</item>
+    </array>
+
+
+    <array name="shenpitypes2bieming">
+        <item>leave</item>
+        <item>repay</item>
+        <item>trip</item>
+        <item>loan</item>
+        <item>recruit</item>
+        <item>quit</item>
+        <item>regular</item>
+        <item>seal</item>
+        <item>agreement</item>
+        <!-- <item>agreementapply</item>-->
+        <item>out</item>
+        <item>wages</item>
+        <item>purchase</item>
+        <item>payfor</item>
+        <item>use</item>
+        <item>common</item>
+    </array>
+
+
+    <array name="hanziNum">
+        <item>一</item>
+        <item>二</item>
+        <item>三</item>
+        <item>四</item>
+        <item>五</item>
+        <item>六</item>
+        <item>七</item>
+        <item>八</item>
+        <item>九</item>
+    </array>
+
+    <array name="qingjiatype">
+        <item>事假</item>
+        <item>病假</item>
+        <item>年假</item>
+        <item>调休</item>
+        <item>婚假</item>
+        <item>产假</item>
+        <item>陪护假</item>
+        <item>其他</item>
+    </array>
+
+
+
+
+    <array name="huibaofilter">
+        <item>全部</item>
+        <item>日报</item>
+        <item>周报</item>
+        <item>月报</item>
+        <item>业绩</item>
+    </array>
+    <array name="weeks">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期七</item>
+    </array>
+
+    <array name="cgtype">
+        <item>物品</item>
+        <item>办公</item>
+        <item>其他</item>
+
+    </array>
+
+    
+    <array name="piancha">
+        <item>300米</item>
+        <item>500米</item>
+        <item>800米</item>
+        <item>1000米</item>
+    </array>
+
+    <array name="jiekuantype">
+        <item>现金</item>
+        <item>支票</item>
+        <item>电汇</item>
+        <item>贷记</item>
+        <item>汇款</item>
+        <item>银行卡</item>
+        <item>其他</item>
+
+
+    </array>
+
+
+
+    <string name="male_text">男</string>
+    <string name="female_text">女</string>
+    <string name="userinfo_gender">性别\u3000</string>
+
+    <!-- 图片编辑器-->
+    <string name="l_album_name_all">最近图片</string>
+    <string name="l_album_name_selected">选择图片</string>
+    <string name="l_album_name_camera">相机</string>
+    <string name="l_album_name_download">下载</string>
+    <string name="l_album_name_screen_shot">屏幕截图</string>
+
+    <string name="l_confirm_dialog_title">提示</string>
+    <string name="l_confirm_dialog_message">您确定要放弃本次选择的图片吗?</string>
+    <string name="title_activity_imagescan">ImagescanActivity</string>
+</resources>

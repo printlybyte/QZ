@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/depName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dep_emp_selector"
+        android:drawableRight="@drawable/showchid"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/list_item_line_padding"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/basetitle"
+        android:textSize="@dimen/secondtitle" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/list_item_line_padding"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/list_item_line_padding"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/day_data"
+            android:textSize="@dimen/comm"
+            android:textColor="@color/basetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/time_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/sign_tag"
+            android:textSize="@dimen/comm_help" />
+    </LinearLayout>
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" android:orientation="vertical">
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/list_item_line_padding"
+        android:background="@color/line" />
+    <TextView
+        android:id="@+id/tips_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dep_emp_selector"
+        android:paddingBottom="10dp"
+        android:paddingLeft="@dimen/list_item_line_padding"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/wait"
+        android:textSize="@dimen/secondtitle" />
+   </LinearLayout>
+</LinearLayout>

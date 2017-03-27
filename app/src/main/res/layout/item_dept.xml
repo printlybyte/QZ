@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/dep_emp_selector"
+    >
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/list_item_line_padding"
+        android:background="@color/line" />
+    <LinearLayout
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:src="@drawable/defaultdep"
+            android:id="@+id/departHead"
+            android:layout_width="37dp"
+            android:layout_height="37dp" />
+
+        <TextView
+            android:layout_marginLeft="6dp"
+            android:id="@+id/depart_name"
+            style="@style/list_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

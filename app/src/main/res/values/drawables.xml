@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="list_normal">#ffffff</drawable>
+    <drawable name="list_pressed">#f7f8fc</drawable>
+     <drawable name="transparent">#0000</drawable>
+  <!--  <drawable name="list_pressed">#f2f3f7</drawable>-->
+</resources>

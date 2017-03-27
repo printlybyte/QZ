@@ -1,0 +1,192 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="windowActionBar">false</item>
+
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="android:clipToPadding">false</item>
+
+        <!--
+                <item name="android:windowNoTitle">true</item>
+        -->
+    </style>
+
+    <style name="AppTheme" parent="@style/BaseTheme"></style>
+    <!--dialog-->
+    <style name="comm_alertdialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!--底层弹出-->
+    <style name="dialog_anim" parent="@style/comm_alertdialog">
+        <item name="android:windowAnimationStyle">@style/AnimationPicker</item>
+    </style>
+
+    <style name="AnimationPicker" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+    <style name="basetitle">
+        <item name="android:textColor">@color/basetitle</item>
+        <item name="android:textSize">@dimen/basetitle</item>
+        <item name="android:singleLine">true</item>
+
+    </style>
+
+    <style name="rightbutton">
+        <item name="android:textColor">@color/press_selector</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/rightbutton</item>
+    </style>
+
+    <!--commlist-->
+    <style name="commlist">
+        <item name="android:divider">@color/transparent</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+        <item name="android:listSelector">@color/transparent</item>
+    </style>
+    <!--listView的title-->
+    <style name="list_item_title">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/basetitle</item>
+        <item name="android:textSize">@dimen/secondtitle</item>
+    </style>
+
+    <style name="list_item_title_second">
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/disable</item>
+        <item name="android:textSize">@dimen/comm_help</item>
+    </style>
+
+    <style name="more_item">
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:minHeight">44dp</item>
+        <item name="android:textSize">@dimen/comm_help</item>
+    </style>
+
+    <style name="titlebar">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingTop">@dimen/titlebar_padding</item>
+        <item name="android:paddingBottom">@dimen/titlebar_padding</item>
+        <item name="android:layout_height">@dimen/titlebar_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/bottomline</item>
+    </style>
+
+
+    <style name="empdetail_left">
+        <item name="android:textSize">@dimen/secondtitle</item>
+        <item name="android:textColor">@color/basetitle</item>
+        <item name="android:layout_marginLeft">4dp</item>
+    </style>
+
+    <style name="empdetail_right">
+        <item name="android:maxLines">1</item>
+        <item name="android:minWidth">150dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">@dimen/secondtitle</item>
+        <item name="android:textColor">@color/disable</item>
+        <item name="android:textColorHint">@color/sign_tag</item>
+        <item name="android:layout_marginRight">4dp</item>
+    </style>
+
+    <style name="empdetail_right_multline">
+        <item name="android:minHeight">100dp</item>
+        <item name="android:gravity">start</item>
+         <item name="android:paddingLeft">5dp</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:textSize">@dimen/secondtitle</item>
+        <item name="android:textColor">@color/disable</item>
+        <item name="android:textColorHint">@color/sign_tag</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="myinfo_textleft">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="CustomFragmentDialog" parent="@style/AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+
+    </style>
+
+    <style name="topleftimg">
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:src">@drawable/back_icon</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+
+    <style name="item_titlebar">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_height">70dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">@drawable/dep_emp_selector</item>
+    </style>
+
+
+    <style name="selection_item">
+
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingLeft">24dp</item>
+        <item name="android:paddingRight">24dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/choicetag_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/comm</item>
+        <item name="android:textColor">@color/selection_color</item>
+        <item name="android:button">@color/transparent</item>
+        <item name="android:layout_marginLeft">15dp</item>
+
+    </style>
+
+    <!--    <style name="renwu_TabLayout" parent="Widget.Design.TabLayout">
+            <item name="tabMaxWidth">50dp</item>
+            <item name="tabIndicatorColor">@color/blue</item>
+            <item name="tabIndicatorHeight">2dp</item>
+            <item name="tabPaddingStart">12dp</item>
+           <item name="tabPaddingEnd">12dp</item>
+            <item name="tabBackground">@color/transparent</item>
+            <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+           <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+        </style>
+        <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+            <item name="android:textSize">@dimen/comm_help</item>
+            <item name="android:textColor">@color/sign_tag</item>
+            <item name="textAllCaps">true</item>
+        </style>-->
+
+
+</resources>

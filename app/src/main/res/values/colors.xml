@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--base-->
+    <color name="colorPrimary">#ffffff</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#000000</color>
+
+    <!--comm color-->
+    <color name="dimgrey">#696969</color>
+    <color name="comm_bg">#f0f1f5</color>
+    <color name="comm_color">#E3393A</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="shouye">#00a5e0</color>
+    <color name="main_gray">#9A9A9A</color>
+    <color name="red">#f00</color>
+    <color name="base_color">#2989ff</color>
+    <color name="list_item_title">#737580</color>
+    <color name="gray_bg">#d4d4d4</color>
+    <color name="grey">#808080</color>
+    <color name="transparent">#00000000</color>
+    <color name="translucent">#44000000</color>
+
+    <!--按钮突出色-->
+    <color name="blue">#2989ff</color>
+    <!--按钮突出色-->
+    <color name="blue_pressed">#aa2989ff</color>
+    <color name="light_blue_pressed">#662989ff</color>
+
+    <!--重要文字信息及内页标题信息-->
+    <color name="basetitle">#2e2f33</color>
+    <!--用于普通级段落文字信息或二级标题-->
+    <color name="commtext">#737580</color>
+    <!--次要信息，按钮不可点击-->
+    <color name="disable">#a1a3b3</color>
+    <!--辅助 标记，标签-->
+    <color name="sign_tag">#cfd2e6</color>
+    <!--分割线描边-->
+    <color name="line">#c8c9cc</color>
+    <!--分割线描边2-->
+    <color name="line2">#d9dbde</color>
+    <!--拒绝状态删除-->
+    <color name="del_refuse">#ff6c60</color>
+    <color name="del_refuse_pressed">#aaff6c60</color>
+
+   <!--用于当前状态等待或提醒-->
+    <color name="wait">#f8ac59</color>
+<!--用于当前状态通过或者进行中-->
+    <color name="finish">#1ab394</color>
+    <color name="finish_pressed">#aa1ab394</color>
+    <!---->
+    <color name="searchbg">#D9D9D9</color>
+    <!--dialog-->
+    <color name="dialog_line">#d7d7d7</color>
+    <color name="setting_menu_item_click_color">#f5f5f5</color>
+
+    <color name="toolbar_line">@color/line</color>
+    <color name="toolbar_bg">#ffffff</color>
+    <color name="list_normal">#ffffff</color>
+    <color name="list_pressed">#22000000</color>
+    <color name="list_pressed2">#f7f8fc</color>
+
+    <color name="background_tab_pressed">#6633B5E5</color>
+
+    <color name="hintcolor">#ffb9b2</color>
+
+<!-- 图片编辑器-->
+    <color name="top_bg">#0f0f0f</color>
+
+
+    <color name="tag2">#b8bbcc</color>
+
+    <color name="selectedcolor">#8f9095</color>
+   <color name="dialogcontent">#45464c</color>
+</resources>

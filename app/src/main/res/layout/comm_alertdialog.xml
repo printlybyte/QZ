@@ -1,0 +1,89 @@
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialogbg"
+    android:paddingTop="27dp"
+    android:orientation="vertical" >
+
+<!--    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@color/base_color" />-->
+
+    <TextView
+        android:id="@+id/alertTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="14dp"
+        android:textSize="16dp" />
+
+    <!--  -->
+
+    <LinearLayout
+        android:id="@+id/content"
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="14dp"
+        android:gravity="center" >
+        <TextView
+            android:id="@+id/contenttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="15dp"
+            android:scrollbars="vertical"
+            android:textColor="@color/dialogcontent"
+            android:textSize="@dimen/secondtitle"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/dialog_line" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal" >
+
+
+        <Button
+            android:id="@+id/canclebut"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_leftbut_selector"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/press_selector"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/divimg"
+            android:layout_width="1px"
+            android:layout_height="fill_parent"
+            android:layout_weight="0"
+            android:background="@color/dialog_line" />
+        <Button
+            android:id="@+id/okbut"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/dialog_rightbut_selector"
+            android:gravity="center"
+            android:text="@string/ok"
+            android:textColor="@color/press_selector"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</LinearLayout>

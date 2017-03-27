@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:paddingTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/popbg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/guanli_click"
+            style="@style/more_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="考勤管理" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/line" />
+
+        <TextView
+            android:id="@+id/tongji_click"
+            style="@style/more_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="考勤统计" />
+    </LinearLayout>
+</LinearLayout>

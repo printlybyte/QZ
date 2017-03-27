@@ -1,0 +1,94 @@
+    Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case API.REQUEST_BEGIN:
+
+                    break;
+                case API.REQUEST_SUCCESS:
+                    clearWaiting();
+                    try {
+                        Userinfo userinfo = ((NetUser) msg.obj).userinfo;
+                        PreferencesUtils.putString(Constant.SP_TOKEN, userinfo.token);
+                        MainActivity.start(LoginActivity.this);
+                        finish();
+                    } catch (Exception e) {
+
+                    }
+
+                    break;
+                case API.REQUEST_FAIL:
+                    String message = "";
+                    if(null!=msg.obj){
+                                             message= (String) msg.obj;
+                                         } else {
+                                             message= getString(R.string.fail_getdata);
+                                         }
+                    CommonUtils.showToast(message);
+                    clearWaiting();
+                    break;
+
+            }
+
+        }
+    };
+
+
+                    GridLayoutManager gridLayoutManager2 = new GridLayoutManager(getActivity(),3, GridLayoutManager.VERTICAL, false);
+                    listimgs.setLayoutManager(gridLayoutManager2);
+                     FragmentManager.addStackFragment(getActivity(), BaseFragment.getInstance(getActivity(),ShenpilistFragment.class.getName()));
+
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="@dimen/listview_item_padding"
+            android:background="@color/line" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dep_emp_selector"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingLeft="@dimen/listview_item_padding">
+
+            <ImageView
+                android:src="@drawable/default_head"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="16dp"
+                android:paddingRight="12dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+  FragmentManager.addStackFragment(getActivity(), com.qz.app.base.BaseFragment.getInstance(getActivity(), EdittaskFragment.class.getName(), bundle));
+
+    <com.suke.widget.SwitchButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:sb_show_indicator="false"
+        app:sb_checked="true"/>

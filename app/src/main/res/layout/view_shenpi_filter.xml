@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/titlebar">
+
+        <ImageView
+            android:id="@+id/leftimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/close_icon"></ImageView>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/basetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="筛选" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="状态"
+            android:textColor="@color/basetitle"
+            android:textSize="@dimen/secondtitle" />
+
+
+
+          <GridView
+              android:paddingLeft="17dp"
+              android:paddingRight="24dp"
+              android:paddingTop="15dp"
+              android:listSelector="@color/transparent"
+              android:cacheColorHint="@color/transparent"
+              android:id="@+id/filterchoice"
+              android:numColumns="3"
+              android:verticalSpacing="15dp"
+              android:horizontalSpacing="24dp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"></GridView>
+   <!--     <com.qz.app.view.FlowRadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio0"
+                style="@style/selection_item"
+                android:checked="true"
+
+                android:text="全部" />
+
+            <RadioButton
+                android:id="@+id/radio1"
+                style="@style/selection_item"
+                android:checked="true"
+
+                android:text="审批中" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                style="@style/selection_item"
+                android:text="审批通过" />
+
+
+            <RadioButton
+                android:id="@+id/radio3"
+                style="@style/selection_item"
+                android:text="审批拒绝"
+           />
+        </com.qz.app.view.FlowRadioGroup>-->
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="日期"
+            android:textColor="@color/basetitle"
+            android:textSize="@dimen/secondtitle" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/radio4"
+                android:text="发起日期"
+                style="@style/selection_item" />
+            <RadioButton
+                android:id="@+id/radio5"
+                style="@style/selection_item"
+                android:text="审批日期"
+           />
+        </RadioGroup>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <TextView
+            android:id="@+id/reset_click"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/choice_normal"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="重置"
+            android:textColor="@color/disable" />
+
+        <TextView
+            android:id="@+id/ok_click"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/choice_selected_fill"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="确定"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</LinearLayout>

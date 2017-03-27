@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/titlebar">
+
+        <TextView
+            android:id="@+id/leftimg"
+            style="@style/rightbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/backimg_margin"
+            android:text="取消" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/basetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="付款" />
+
+
+        <TextView
+            android:id="@+id/finish"
+            style="@style/rightbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/backimg_margin"
+            android:text="完成" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/type_click"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:background="@drawable/dep_emp_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/empdetail_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="付款总额" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:hint="必填"
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/money_data"
+                style="@style/empdetail_right"
+                android:gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/paytype_click"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/dep_emp_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+            style="@style/empdetail_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="付款方式" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:hint="必填"
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/paytype_data"
+                style="@style/empdetail_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/showchid" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/paytime_click"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/dep_emp_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+
+            style="@style/empdetail_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="支付日期" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:hint="必填"
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/paytime_data"
+                style="@style/empdetail_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:src="@drawable/showchid" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:id="@+id/hktime_click"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/dep_emp_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+
+            style="@style/empdetail_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="支付名称" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:hint="必填"
+                android:layout_marginRight="15dp"
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/payName_data"
+                style="@style/empdetail_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/dep_emp_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+
+            style="@style/empdetail_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="开户支行" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:inputType="number"
+                android:hint="必填"
+                android:layout_marginRight="15dp"
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/bankName_data"
+                style="@style/empdetail_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:background="@color/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/dep_emp_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <TextView
+
+            style="@style/empdetail_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="银行账户" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:hint="必填"
+                android:layout_marginRight="15dp"
+                android:textColorHint="@color/hintcolor"
+                android:id="@+id/cardnum_data"
+                android:inputType="number"
+                style="@style/empdetail_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/empdetail_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="备注" />
+
+        <EditText
+            android:id="@+id/reason"
+            android:layout_marginLeft="5dp"
+            android:padding="5dp"
+            android:gravity="start"
+            style="@style/empdetail_right"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="输入备注"
+            android:minHeight="100dp" />
+    </LinearLayout>
+
+<!--    <android.support.v7.widget.RecyclerView
+        android:id="@+id/listimgs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:background="@color/white"
+        android:padding="10dp"></android.support.v7.widget.RecyclerView>-->
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/memberlist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:background="@color/white"
+        android:padding="20dp"></android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/copylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:background="@color/white"
+        android:padding="20dp"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

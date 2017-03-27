@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/divider_line_padding"
+    android:paddingRight="@dimen/divider_line_padding" >
+
+    <TextView
+        android:id="@+id/sex_select_title"
+        style="@style/myinfo_textleft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:text="@string/userinfo_gender" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_height"
+        android:background="@color/black"
+        android:paddingLeft="@dimen/divider_line_padding"
+        android:paddingRight="@dimen/divider_line_padding" />
+
+    <RelativeLayout
+        android:id="@+id/male_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/selection1"
+            style="@style/myinfo_textleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/male_text" />
+
+        <ImageView
+            android:id="@+id/male_select_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/select_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_line_height"
+        android:background="@color/line"
+        android:paddingLeft="@dimen/divider_line_padding"
+        android:paddingRight="@dimen/divider_line_padding" />
+
+    <RelativeLayout
+        android:id="@+id/female_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/selection2"
+            style="@style/myinfo_textleft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:text="@string/female_text" />
+
+        <ImageView
+            android:id="@+id/female_select_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/select_normal" />
+    </RelativeLayout>
+
+</LinearLayout>

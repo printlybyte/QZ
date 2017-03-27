@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/comm_title"></include>
+    <LinearLayout
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:orientation="vertical" android:background="@color/white">
+    <LinearLayout
+        android:id="@+id/renwu_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/dep_emp_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/renwu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="任务" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/list_item_line_padding"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/shenpi_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dep_emp_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="@dimen/dept_icon"
+            android:layout_height="@dimen/dept_icon"
+            android:src="@drawable/shenpi" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="审批" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/list_item_line_padding"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/kaoqin_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dep_emp_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="@dimen/dept_icon"
+            android:layout_height="@dimen/dept_icon"
+            android:src="@drawable/kaoqin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="考勤" />
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/list_item_line_padding"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/huibao_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dep_emp_selector"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="@dimen/dept_icon"
+            android:layout_height="@dimen/dept_icon"
+            android:src="@drawable/huibao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:text="工作汇报" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

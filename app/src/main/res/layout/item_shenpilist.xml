@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="@dimen/list_item_line_padding"
+        android:background="@color/line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dep_emp_selector"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/list_item_line_padding"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="@dimen/list_item_line_padding">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/basetitle"
+                android:textSize="@dimen/secondtitle" />
+
+            <TextView
+                android:id="@+id/time_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/tag2"
+                android:textSize="@dimen/comm_help2" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/conent_data"
+            android:textSize="@dimen/comm"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/commtext" />
+
+        <RelativeLayout
+            android:layout_marginTop="3dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/status_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/disable"
+                android:textSize="@dimen/secondtitle" />
+
+            <TextView
+                android:id="@+id/persion_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/tag2"
+                android:textSize="@dimen/comm_help2" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

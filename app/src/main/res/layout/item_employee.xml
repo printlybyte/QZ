@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/dep_emp_selector"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="22dp"
+        android:layout_weight="1.0"
+        android:background="@color/comm_bg"
+        android:text="A"
+        android:paddingLeft="15dp"
+        android:gravity="center_vertical"
+        android:textColor="#454545"></TextView>
+    <ImageView
+        android:id="@+id/line"
+        android:layout_marginLeft="@dimen/list_item_line_padding"
+        android:layout_width="fill_parent"
+        android:background="@color/line"
+        android:layout_height="1px" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/listitem_height">
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/listitem_height"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="5dp"
+            android:id="@+id/headimg"
+            android:layout_width="46dp"
+            android:layout_height="46dp" />
+
+        <TextView
+            android:layout_marginLeft="16dp"
+            android:id="@+id/employeename_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/commtext" />
+
+        <TextView
+            android:id="@+id/depart_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/disable" />
+        <ImageView
+            android:id="@+id/divimg"
+            android:visibility="gone"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_width="1px"
+            android:layout_height="10dp" android:background="@color/disable" />
+        <TextView
+            android:id="@+id/job_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/disable" />
+    </LinearLayout>
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/selectimg"
+             android:layout_marginRight="20dp"
+            android:src="@drawable/select_normal"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</LinearLayout>

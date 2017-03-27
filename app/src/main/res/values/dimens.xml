@@ -1,0 +1,57 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="picker_dialog_height">180dp</dimen>
+    <dimen name="picker_toolbar_height">48dp</dimen>
+    <!--用于导航标题，特别突出重要的信息-->
+    <dimen name="basetitle">18sp</dimen>
+    <!--用于标题重要信息-->
+    <dimen name="rightbutton">16sp</dimen>
+
+    <!--用于二级标题或者单行列表-->
+    <dimen name="secondtitle">15sp</dimen>
+
+    <!--用于大多数文字，内容，内容页-->
+    <dimen name="comm">14sp</dimen>
+
+    <!--用于大多数辅助文字，副标语-->
+    <dimen name="comm_help">13sp</dimen>
+    <!--用于大多数辅助文字，次要，备注-->
+    <dimen name="comm_help2">12sp</dimen>
+    <!--标题栏高度-->
+    <dimen name="titlebar_height">44dp</dimen>
+    <!---->
+    <dimen name="titlebar_padding">10dp</dimen>
+    <!--返回按钮margin-->
+    <dimen name="backimg_margin">15dp</dimen>
+    <!--距离titlebar的尺寸-->
+    <dimen name="firstitem_margintop">5dp</dimen>
+    <!--分割线marginleft-->
+    <dimen name="list_item_line_padding">15dp</dimen>
+    <!--分割线高度-->
+    <dimen name="divider_line_height">1px</dimen>
+    <!--分割线marginleft-->
+    <dimen name="divider_line_padding">10dp</dimen>
+    <!--listView padding-->
+    <dimen name="listview_item_padding">10dp</dimen>
+
+    <dimen name="bottom_tag_margin">3dp</dimen>
+
+
+    <dimen name="dept_icon">46dp</dimen>
+
+    <dimen name="greyline_height">27dp</dimen>
+
+    <dimen name="listitem_height">70dp</dimen>
+
+
+    <!-- -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="l_gridItemImageWidth">56dp</dimen>
+    <dimen name="l_gridItemImageHeight">56dp</dimen>
+
+    <dimen name="divheight">10dp</dimen>
+
+
+    <dimen name="dialogradius">6dp</dimen>
+</resources>

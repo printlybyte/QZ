@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/comm_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        style="@style/titlebar"
+        android:layout_weight="0">
+
+        <ImageView
+            android:id="@+id/leftimg"
+            style="@style/topleftimg" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/basetitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/writehuibao"
+            style="@style/rightbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/backimg_margin"
+            android:text="写汇报" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/firstitem_margintop"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/listview_item_padding"
+                android:paddingTop="12dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/default_head" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/name_data"
+
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/basetitle"
+                                android:textSize="@dimen/secondtitle" />
+
+                            <TextView
+                                android:id="@+id/typename_data"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:textColor="@color/wait"
+                                android:textSize="@dimen/secondtitle" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/showselection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dp"
+                            android:padding="5dp"
+                            android:src="@drawable/showselection" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/time_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/sign_tag"
+                        android:textSize="@dimen/comm_help" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="@dimen/list_item_line_padding"
+                android:layout_marginTop="12dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:id="@+id/content_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="@dimen/list_item_line_padding"
+                android:textColor="#8f9095" />
+
+            <TextView
+
+                android:id="@+id/plan_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="10dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="@dimen/list_item_line_padding"
+                android:textColor="#8f9095" />
+
+            <TextView
+                android:id="@+id/summary_data"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="10dp"
+                android:paddingBottom="12dp"
+                android:paddingLeft="@dimen/list_item_line_padding"
+                android:textColor="#8f9095"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/images"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"></android.support.v7.widget.RecyclerView>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/pinglun_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/dicussimg"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/pinglun_selector" />
+
+                    <TextView
+
+                        android:id="@+id/discusscount_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/dicussimg"
+                        android:text="评论"
+                        android:textColor="@color/tagtext_selector" />
+
+                    <ImageView
+                        android:id="@+id/discusscountline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_alignLeft="@id/dicussimg"
+                        android:layout_alignRight="@id/discusscount_data"
+                        android:layout_below="@id/discusscount_data"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/blue"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="1px"
+                    android:layout_height="15dp"
+                    android:layout_weight="0"
+                    android:background="@color/disable" />
+
+                <RelativeLayout
+                    android:id="@+id/yuedu_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/readcountimg"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/yuedu_selector" />
+
+                    <TextView
+                        android:id="@+id/havereadcount_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/readcountimg"
+                        android:text="阅读"
+                        android:textColor="@color/tagtext_selector" />
+
+                    <ImageView
+                        android:id="@+id/readcountline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_alignLeft="@id/readcountimg"
+                        android:layout_alignRight="@id/havereadcount_data"
+                        android:layout_below="@id/havereadcount_data"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/blue"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="1px"
+                    android:layout_height="15dp"
+                    android:layout_weight="0"
+                    android:background="@color/disable" />
+
+
+                <RelativeLayout
+                    android:id="@+id/fujian_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:id="@+id/subfileimg"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/guanlian_selector" />
+
+                    <TextView
+                        android:id="@+id/subfile_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/subfileimg"
+                        android:text="附件"
+                        android:textColor="@color/tagtext_selector" />
+
+                    <ImageView
+                        android:id="@+id/fujianline"
+                        android:layout_width="wrap_content"
+                        android:layout_height="2dp"
+                        android:layout_alignLeft="@id/subfileimg"
+                        android:layout_alignRight="@id/subfile_data"
+                        android:layout_below="@id/subfile_data"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/blue"
+                        android:paddingLeft="2dp"
+                        android:paddingRight="2dp"
+                        android:visibility="invisible" />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/firstitem_margintop"
+            android:layout_weight="1"
+            android:background="@color/white">
+
+            <include
+                layout="@layout/listview_with_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/firstitem_margintop"></include>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/memberdata"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/transparent"
+                android:listSelector="@color/transparent"
+                android:padding="10dp"></android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:id="@+id/computerimg"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:src="@drawable/computericon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="登录网页可查看附件"
+                    android:textColor="@color/sign_tag"
+                    android:textSize="@dimen/comm" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <LinearLayout
+            android:id="@+id/commentlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp">
+
+                <EditText
+
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/commentbg"
+                    android:drawableLeft="@drawable/pinglun_lefticon"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="3dp"
+                    android:textColor="@color/disable"
+                    android:textSize="@dimen/comm" />
+
+                <TextView
+                    android:id="@+id/commit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="0"
+                    android:padding="5dp"
+                    android:text="评论"
+                    android:textColor="@color/disable"
+                    android:textSize="@dimen/comm" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
